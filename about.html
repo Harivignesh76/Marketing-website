@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AutoGlow Car Detailing</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-car-alt text-yellow-500 text-2xl"></i>
+                    <a href="index.html" class="text-2xl font-bold">AutoGlow</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-yellow-500 transition duration-300 font-medium">Home</a>
+                    <a href="services.html" class="hover:text-yellow-500 transition duration-300 font-medium">Services</a>
+                    <a href="portfolio.html" class="hover:text-yellow-500 transition duration-300 font-medium">Portfolio</a>
+                    <a href="about.html" class="text-yellow-500 font-medium">About</a>
+                    <a href="contact.html" class="hover:text-yellow-500 transition duration-300 font-medium">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 pb-4">
+            <div class="container mx-auto px-4 flex flex-col space-y-3 pt-2">
+                <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">Home</a>
+                <a href="services.html" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">Services</a>
+                <a href="portfolio.html" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">Portfolio</a>
+                <a href="about.html" class="block py-2 px-4 text-sm bg-gray-700 rounded">About</a>
+                <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative bg-cover bg-center py-20" style="background-image: url('images/hero-bg.jpg.svg');">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">About AutoGlow</h1>
+            <p class="text-xl text-gray-200 max-w-3xl mx-auto">Discover our story, our team, and our commitment to excellence in car detailing.</p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll">
+                    <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+                    <div class="w-20 h-1 bg-yellow-500 mb-8"></div>
+                    <p class="text-gray-600 mb-6">Founded in 2010, AutoGlow began as a small garage with a big vision: to provide the highest quality car detailing services with unmatched attention to detail. Our founder, Michael Reynolds, a car enthusiast with over 15 years of experience in the automotive industry, started the business with just two employees and a passion for making vehicles look their absolute best.</p>
+                    <p class="text-gray-600 mb-6">Over the years, we've grown from that small garage to a full-service detailing center, expanding our services to include professional painting, custom stickering, performance modifications, premium sound systems, PPF coating, and comprehensive interior detailing. What hasn't changed is our commitment to quality, precision, and customer satisfaction.</p>
+                    <p class="text-gray-600">Today, AutoGlow is recognized as one of the leading car detailing garages in the region, serving thousands of satisfied customers and transforming countless vehicles from ordinary to extraordinary. Our team has grown to include specialists in every aspect of car detailing, each bringing their unique expertise and passion to the work we do.</p>
+                </div>
+                <div class="relative animate-on-scroll">
+                    <img src="images/about-story.jpg" alt="AutoGlow Garage" class="rounded-lg shadow-xl w-full h-auto">
+                    <div class="absolute -bottom-6 -left-6 bg-yellow-500 text-gray-900 py-4 px-6 rounded-lg shadow-lg">
+                        <p class="text-xl font-bold">13+ Years of Excellence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission & Values -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Mission & Values</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">At AutoGlow, we're driven by a clear mission and guided by strong values that shape everything we do.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Mission -->
+                <div class="bg-white p-8 rounded-lg shadow-md animate-on-scroll">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-yellow-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-bullseye text-gray-900 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Our Mission</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">Our mission is to transform every vehicle that comes through our doors, exceeding customer expectations through exceptional craftsmanship, innovative techniques, and personalized service. We aim to be the premier destination for car enthusiasts and everyday drivers alike who seek the very best for their vehicles.</p>
+                    <p class="text-gray-600">We're committed to staying at the forefront of the industry, continuously learning and adopting new technologies and methods to provide services that not only enhance the appearance of your vehicle but also protect your investment and extend its lifespan.</p>
+                </div>
+                <!-- Values -->
+                <div class="bg-white p-8 rounded-lg shadow-md animate-on-scroll">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-yellow-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-star text-gray-900 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Our Values</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-yellow-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Excellence</h4>
+                                <p class="text-gray-600">We strive for excellence in every detail, never settling for anything less than the best.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-yellow-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Integrity</h4>
+                                <p class="text-gray-600">We operate with honesty and transparency, building trust with our customers through every interaction.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-yellow-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Innovation</h4>
+                                <p class="text-gray-600">We embrace new technologies and techniques to deliver cutting-edge solutions for our customers.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-yellow-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Customer Focus</h4>
+                                <p class="text-gray-600">We put our customers at the center of everything we do, tailoring our services to meet their unique needs.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Team -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Meet Our Expert Team</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Our team of skilled professionals brings years of experience and passion to every project.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="team-card bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                    <div class="relative">
+                        <img src="images/team-1.jpg" alt="Michael Reynolds" class="w-full h-auto">
+                        <div class="absolute inset-0 bg-black bg-opacity-20 transition-opacity duration-300 opacity-0 hover:opacity-100"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Michael Reynolds</h3>
+                        <p class="text-yellow-500 font-medium mb-3">Founder & CEO</p>
+                        <p class="text-gray-600 mb-4">With over 15 years in the automotive industry, Michael's vision and leadership drive our commitment to excellence.</p>
+                        <div class="team-social flex space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="team-card bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                    <div class="relative">
+                        <img src="images/team-2.jpg" alt="Sarah Johnson" class="w-full h-auto">
+                        <div class="absolute inset-0 bg-black bg-opacity-20 transition-opacity duration-300 opacity-0 hover:opacity-100"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Sarah Johnson</h3>
+                        <p class="text-yellow-500 font-medium mb-3">Head of Design</p>
+                        <p class="text-gray-600 mb-4">Sarah's creative eye and attention to detail ensure that every custom design exceeds expectations.</p>
+                        <div class="team-social flex space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="team-card bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                    <div class="relative">
+                        <img src="images/team-3.jpg" alt="David Martinez" class="w-full h-auto">
+                        <div class="absolute inset-0 bg-black bg-opacity-20 transition-opacity duration-300 opacity-0 hover:opacity-100"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">David Martinez</h3>
+                        <p class="text-yellow-500 font-medium mb-3">Lead Technician</p>
+                        <p class="text-gray-600 mb-4">David's technical expertise in performance modifications and sound systems is unmatched in the industry.</p>
+                        <div class="team-social flex space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="team-card bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                    <div class="relative">
+                        <img src="images/team-4.jpg" alt="Emily Chen" class="w-full h-auto">
+                        <div class="absolute inset-0 bg-black bg-opacity-20 transition-opacity duration-300 opacity-0 hover:opacity-100"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Emily Chen</h3>
+                        <p class="text-yellow-500 font-medium mb-3">Customer Relations</p>
+                        <p class="text-gray-600 mb-4">Emily ensures that every customer receives personalized attention and an exceptional experience from start to finish.</p>
+                        <div class="team-social flex space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Achievements -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Achievements</h2>
+                <p class="text-gray-300 max-w-3xl mx-auto">We take pride in our accomplishments and the recognition we've received for our commitment to excellence.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Achievement 1 -->
+                <div class="stats-counter bg-gray-800 p-8 rounded-lg text-center">
+                    <div class="text-yellow-500 text-4xl font-bold mb-2 counter">5,000+</div>
+                    <p class="text-gray-300 text-lg">Satisfied Customers</p>
+                </div>
+                <!-- Achievement 2 -->
+                <div class="stats-counter bg-gray-800 p-8 rounded-lg text-center">
+                    <div class="text-yellow-500 text-4xl font-bold mb-2 counter">10,000+</div>
+                    <p class="text-gray-300 text-lg">Projects Completed</p>
+                </div>
+                <!-- Achievement 3 -->
+                <div class="stats-counter bg-gray-800 p-8 rounded-lg text-center">
+                    <div class="text-yellow-500 text-4xl font-bold mb-2 counter">15</div>
+                    <p class="text-gray-300 text-lg">Industry Awards</p>
+                </div>
+                <!-- Achievement 4 -->
+                <div class="stats-counter bg-gray-800 p-8 rounded-lg text-center">
+                    <div class="text-yellow-500 text-4xl font-bold mb-2 counter">25</div>
+                    <p class="text-gray-300 text-lg">Expert Team Members</p>
+                </div>
+            </div>
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Award 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg flex items-center">
+                    <div class="bg-yellow-500 p-4 rounded-full mr-4">
+                        <i class="fas fa-trophy text-gray-900 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-1">Best Detailing Service</h3>
+                        <p class="text-gray-400">Automotive Excellence Awards, 2022</p>
+                    </div>
+                </div>
+                <!-- Award 2 -->
+                <div class="bg-gray-800 p-6 rounded-lg flex items-center">
+                    <div class="bg-yellow-500 p-4 rounded-full mr-4">
+                        <i class="fas fa-medal text-gray-900 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-1">Top Custom Modification Shop</h3>
+                        <p class="text-gray-400">Car Enthusiast Magazine, 2021</p>
+                    </div>
+                </div>
+                <!-- Award 3 -->
+                <div class="bg-gray-800 p-6 rounded-lg flex items-center">
+                    <div class="bg-yellow-500 p-4 rounded-full mr-4">
+                        <i class="fas fa-award text-gray-900 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-1">Customer Satisfaction Excellence</h3>
+                        <p class="text-gray-400">National Auto Service Association, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Facility -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our State-of-the-Art Facility</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Take a tour of our modern facility equipped with the latest technology and tools to provide the best service for your vehicle.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Facility Image 1 -->
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="images/facility-1.jpg" alt="AutoGlow Painting Bay" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110">
+                    <div class="p-4 bg-gray-50">
+                        <h3 class="font-bold text-lg">Professional Painting Bay</h3>
+                        <p class="text-gray-600">Our climate-controlled painting bay ensures flawless results every time.</p>
+                    </div>
+                </div>
+                <!-- Facility Image 2 -->
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="images/facility-2.jpg" alt="AutoGlow Detailing Area" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110">
+                    <div class="p-4 bg-gray-50">
+                        <h3 class="font-bold text-lg">Detailing Workspace</h3>
+                        <p class="text-gray-600">Dedicated spaces for meticulous interior and exterior detailing.</p>
+                    </div>
+                </div>
+                <!-- Facility Image 3 -->
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="images/facility-3.jpg" alt="AutoGlow Sound System Installation" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110">
+                    <div class="p-4 bg-gray-50">
+                        <h3 class="font-bold text-lg">Electronics Workshop</h3>
+                        <p class="text-gray-600">Specialized area for sound system and electronic modifications.</p>
+                    </div>
+                </div>
+                <!-- Facility Image 4 -->
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="images/facility-4.jpg" alt="AutoGlow Customer Lounge" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110">
+                    <div class="p-4 bg-gray-50">
+                        <h3 class="font-bold text-lg">Customer Lounge</h3>
+                        <p class="text-gray-600">Comfortable waiting area with refreshments and Wi-Fi.</p>
+                    </div>
+                </div>
+                <!-- Facility Image 5 -->
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="images/facility-5.jpg" alt="AutoGlow PPF Application" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110">
+                    <div class="p-4 bg-gray-50">
+                        <h3 class="font-bold text-lg">PPF Application Room</h3>
+                        <p class="text-gray-600">Dust-free environment for perfect paint protection film application.</p>
+                    </div>
+                </div>
+                <!-- Facility Image 6 -->
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="images/facility-6.jpg" alt="AutoGlow Tools and Equipment" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110">
+                    <div class="p-4 bg-gray-50">
+                        <h3 class="font-bold text-lg">Professional Equipment</h3>
+                        <p class="text-gray-600">We invest in the best tools and products for superior results.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="contact.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full transition duration-300">Schedule a Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Don't just take our word for it. Here's what our satisfied customers have to say about their experience with AutoGlow.</p>
+            </div>
+            <div class="relative testimonial-slider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-item">
+                    <div class="bg-white p-8 rounded-lg shadow-md max-w-4xl mx-auto">
+                        <div class="flex items-center mb-6">
+                            <img src="images/testimonial-1.jpg" alt="John D." class="w-16 h-16 rounded-full mr-4">
+                            <div>
+                                <h3 class="text-xl font-bold">John D.</h3>
+                                <p class="text-gray-500">Luxury Car Owner</p>
+                            </div>
+                            <div class="ml-auto">
+                                <div class="flex text-yellow-500">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-lg italic">"I've been taking my cars to AutoGlow for over 5 years now, and I wouldn't trust anyone else. Their attention to detail is remarkable, and the PPF coating they applied has kept my vehicle looking brand new despite daily use. The team is knowledgeable, professional, and always goes above and beyond."</p>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-item hidden">
+                    <div class="bg-white p-8 rounded-lg shadow-md max-w-4xl mx-auto">
+                        <div class="flex items-center mb-6">
+                            <img src="images/testimonial-2.jpg" alt="Rebecca M." class="w-16 h-16 rounded-full mr-4">
+                            <div>
+                                <h3 class="text-xl font-bold">Rebecca M.</h3>
+                                <p class="text-gray-500">Sports Car Enthusiast</p>
+                            </div>
+                            <div class="ml-auto">
+                                <div class="flex text-yellow-500">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-lg italic">"The custom paint job and performance modifications AutoGlow did on my sports car exceeded all expectations. Not only does it look stunning, but the performance upgrades have transformed the driving experience. Their team took the time to understand exactly what I wanted and delivered perfection."</p>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-item hidden">
+                    <div class="bg-white p-8 rounded-lg shadow-md max-w-4xl mx-auto">
+                        <div class="flex items-center mb-6">
+                            <img src="images/testimonial-3.jpg" alt="Marcus T." class="w-16 h-16 rounded-full mr-4">
+                            <div>
+                                <h3 class="text-xl font-bold">Marcus T.</h3>
+                                <p class="text-gray-500">Classic Car Collector</p>
+                            </div>
+                            <div class="ml-auto">
+                                <div class="flex text-yellow-500">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-lg italic">"When it comes to restoring and maintaining my collection of classic cars, I trust only AutoGlow. Their knowledge of vintage vehicles and attention to preserving authenticity while incorporating modern protection is unmatched. The team treats each car with respect and care as if it were their own."</p>
+                    </div>
+                </div>
+                <!-- Navigation Buttons -->
+                <button class="testimonial-prev absolute top-1/2 -left-4 md:-left-8 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-md focus:outline-none">
+                    <i class="fas fa-chevron-left text-gray-600"></i>
+                </button>
+                <button class="testimonial-next absolute top-1/2 -right-4 md:-right-8 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-md focus:outline-none">
+                    <i class="fas fa-chevron-right text-gray-600"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners & Certifications -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Partners & Certifications</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">We work with leading brands and maintain industry certifications to ensure the highest quality service.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+                <!-- Partner Logos -->
+                <div class="flex justify-center">
+                    <img src="images/partner-1.png" alt="Partner 1" class="h-16 grayscale hover:grayscale-0 transition duration-300">
+                </div>
+                <div class="flex justify-center">
+                    <img src="images/partner-2.png" alt="Partner 2" class="h-16 grayscale hover:grayscale-0 transition duration-300">
+                </div>
+                <div class="flex justify-center">
+                    <img src="images/partner-3.png" alt="Partner 3" class="h-16 grayscale hover:grayscale-0 transition duration-300">
+                </div>
+                <div class="flex justify-center">
+                    <img src="images/partner-4.png" alt="Partner 4" class="h-16 grayscale hover:grayscale-0 transition duration-300">
+                </div>
+                <div class="flex justify-center">
+                    <img src="images/partner-5.png" alt="Partner 5" class="h-16 grayscale hover:grayscale-0 transition duration-300">
+                </div>
+                <div class="flex justify-center">
+                    <img src="images/partner-6.png" alt="Partner 6" class="h-16 grayscale hover:grayscale-0 transition duration-300">
+                </div>
+            </div>
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold mb-8 text-center">Our Certifications</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Certification 1 -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md flex items-center">
+                        <div class="bg-yellow-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-certificate text-gray-900 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Certified PPF Installers</h4>
+                            <p class="text-gray-600">Authorized by leading manufacturers</p>
+                        </div>
+                    </div>
+                    <!-- Certification 2 -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md flex items-center">
+                        <div class="bg-yellow-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-certificate text-gray-900 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Master Paint Technicians</h4>
+                            <p class="text-gray-600">Industry-recognized qualification</p>
+                        </div>
+                    </div>
+                    <!-- Certification 3 -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md flex items-center">
+                        <div class="bg-yellow-500 p-3 rounded-full mr-4">
+                            <i class="fas fa-certificate text-gray-900 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Automotive Electronics Specialists</h4>
+                            <p class="text-gray-600">Certified by leading audio manufacturers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-yellow-500">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Ready to Experience the AutoGlow Difference?</h2>
+            <p class="text-gray-800 max-w-3xl mx-auto mb-8">Contact us today to schedule an appointment or request a custom quote for your specific requirements.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="contact.html" class="bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center justify-center">
+                    <i class="fas fa-envelope mr-2"></i> Contact Us
+                </a>
+                <a href="services.html" class="bg-transparent hover:bg-white hover:text-gray-900 text-gray-900 font-bold py-3 px-8 border-2 border-gray-900 rounded-full transition duration-300 inline-flex items-center justify-center">
+                    <i class="fas fa-car mr-2"></i> Explore Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-car-alt text-yellow-500 text-2xl"></i>
+                        <span class="text-2xl font-bold">AutoGlow</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Providing premium car detailing services to transform your vehicle inside and out.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#painting" class="text-gray-400 hover:text-yellow-500 transition duration-300">Professional Painting</a></li>
+                        <li><a href="services.html#stickering" class="text-gray-400 hover:text-yellow-500 transition duration-300">Custom Stickering</a></li>
+                        <li><a href="services.html#modification" class="text-gray-400 hover:text-yellow-500 transition duration-300">Performance Modifications</a></li>
+                        <li><a href="services.html#sound" class="text-gray-400 hover:text-yellow-500 transition duration-300">Premium Sound Systems</a></li>
+                        <li><a href="services.html#coating" class="text-gray-400 hover:text-yellow-500 transition duration-300">PFP Coating</a></li>
+                        <li><a href="services.html#interior" class="text-gray-400 hover:text-yellow-500 transition duration-300">Interior Detailing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-yellow-500 mt-1"></i>
+                            <span class="text-gray-400">123 Detailing Street, Automotive City, AC 12345</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-phone-alt text-yellow-500"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-yellow-500"></i>
+                            <span class="text-gray-400">info@autoglow.com</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-clock text-yellow-500"></i>
+                            <span class="text-gray-400">Mon-Sat: 8:00 AM - 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center">
+                <p class="text-gray-400">&copy; 2023 AutoGlow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-yellow-500 text-gray-900 w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

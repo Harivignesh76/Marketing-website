@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AutoGlow Car Detailing</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-car-alt text-yellow-500 text-2xl"></i>
+                    <a href="index.html" class="text-2xl font-bold">AutoGlow</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-yellow-500 transition duration-300 font-medium">Home</a>
+                    <a href="services.html" class="hover:text-yellow-500 transition duration-300 font-medium">Services</a>
+                    <a href="portfolio.html" class="hover:text-yellow-500 transition duration-300 font-medium">Portfolio</a>
+                    <a href="about.html" class="hover:text-yellow-500 transition duration-300 font-medium">About</a>
+                    <a href="contact.html" class="text-yellow-500 font-medium">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 pb-4">
+            <div class="container mx-auto px-4 flex flex-col space-y-3 pt-2">
+                <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">Home</a>
+                <a href="services.html" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">Services</a>
+                <a href="portfolio.html" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">Portfolio</a>
+                <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">About</a>
+                <a href="contact.html" class="block py-2 px-4 text-sm bg-gray-700 rounded">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative bg-cover bg-center py-20" style="background-image: url('images/hero-bg.jpg.svg');">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
+            <p class="text-xl text-gray-200 max-w-3xl mx-auto">Get in touch with our team to discuss your car detailing needs or schedule an appointment.</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Contact Card 1 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md text-center">
+                    <div class="inline-block p-4 bg-yellow-500 text-gray-900 rounded-full mb-4">
+                        <i class="fas fa-map-marker-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Our Location</h3>
+                    <p class="text-gray-600">123 Detailing Street<br>Automotive City, AC 12345<br>United States</p>
+                </div>
+                <!-- Contact Card 2 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md text-center">
+                    <div class="inline-block p-4 bg-yellow-500 text-gray-900 rounded-full mb-4">
+                        <i class="fas fa-phone-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Phone Number</h3>
+                    <p class="text-gray-600">Main: +1 (555) 123-4567<br>Service: +1 (555) 987-6543<br>Emergency: +1 (555) 789-0123</p>
+                </div>
+                <!-- Contact Card 3 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md text-center">
+                    <div class="inline-block p-4 bg-yellow-500 text-gray-900 rounded-full mb-4">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Email Address</h3>
+                    <p class="text-gray-600">info@autoglow.com<br>service@autoglow.com<br>support@autoglow.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Send Us a Message</h2>
+                    <p class="text-gray-600 mb-8">Fill out the form below, and our team will get back to you as soon as possible.</p>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Service Interested In</label>
+                            <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                                <option value="">Select a Service</option>
+                                <option value="painting">Professional Painting</option>
+                                <option value="stickering">Custom Stickering</option>
+                                <option value="modification">Performance Modifications</option>
+                                <option value="sound">Premium Sound Systems</option>
+                                <option value="coating">PPF Coating</option>
+                                <option value="interior">Interior Detailing</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full transition duration-300">Send Message</button>
+                        </div>
+                    </form>
+                    <div id="form-message" class="mt-4 hidden"></div>
+                </div>
+                <!-- Map -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Find Us</h2>
+                    <p class="text-gray-600 mb-8">We're conveniently located in the heart of Automotive City. Visit us today!</p>
+                    <div class="rounded-lg overflow-hidden shadow-lg h-96 bg-gray-300">
+                        <!-- Replace with actual Google Maps embed code -->
+                        <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+                            <p class="text-gray-600">Google Maps will be embedded here</p>
+                            <!-- Actual implementation would use:
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!..." width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Hours -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6 text-center">Business Hours</h2>
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <div class="p-8 border-b md:border-b-0 md:border-r border-gray-200">
+                            <h3 class="text-xl font-bold mb-4">Regular Hours</h3>
+                            <ul class="space-y-3">
+                                <li class="flex justify-between">
+                                    <span class="text-gray-600">Monday - Friday</span>
+                                    <span class="font-medium">8:00 AM - 6:00 PM</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span class="text-gray-600">Saturday</span>
+                                    <span class="font-medium">9:00 AM - 5:00 PM</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span class="text-gray-600">Sunday</span>
+                                    <span class="font-medium">Closed</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold mb-4">Holiday Hours</h3>
+                            <p class="text-gray-600 mb-4">Our hours may vary during holidays. Please call ahead to confirm our availability.</p>
+                            <div class="bg-yellow-100 text-yellow-800 p-4 rounded-lg">
+                                <p class="font-medium">Note: We are closed on major holidays including New Year's Day, Independence Day, Thanksgiving, and Christmas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Find answers to common questions about our services and booking process.</p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-6">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-6 focus:outline-none">
+                            <span class="text-xl font-medium text-left">How far in advance should I book my appointment?</span>
+                            <i class="fas fa-chevron-down text-yellow-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray-600">We recommend booking your appointment at least 1-2 weeks in advance, especially for comprehensive services like painting or modifications. For basic services, we may be able to accommodate appointments with shorter notice, but availability varies based on our schedule.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-6 focus:outline-none">
+                            <span class="text-xl font-medium text-left">How long do your services typically take?</span>
+                            <i class="fas fa-chevron-down text-yellow-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray-600">Service times vary depending on the specific service and your vehicle's condition. Basic detailing services may take 2-4 hours, while more comprehensive services like full paint jobs or major modifications can take several days to complete. We'll provide you with a time estimate when you book your appointment.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-6 focus:outline-none">
+                            <span class="text-xl font-medium text-left">Do you offer warranties on your services?</span>
+                            <i class="fas fa-chevron-down text-yellow-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray-600">Yes, we offer warranties on most of our services. The warranty period varies depending on the service type. Paint jobs typically come with a 2-year warranty against defects, PPF coatings with a 5-year warranty, and sound system installations with a 1-year warranty. Please ask about specific warranty terms for your desired service.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-6 focus:outline-none">
+                            <span class="text-xl font-medium text-left">Do I need to prepare my vehicle before bringing it in?</span>
+                            <i class="fas fa-chevron-down text-yellow-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray-600">For most services, we recommend removing personal belongings from your vehicle before your appointment. For painting or exterior services, a basic wash is helpful but not required. For interior detailing, removing large items and trash will help us provide more thorough service. Our team will provide specific preparation instructions when you book.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 5 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-6 focus:outline-none">
+                            <span class="text-xl font-medium text-left">Do you offer mobile services?</span>
+                            <i class="fas fa-chevron-down text-yellow-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray-600">Yes, we offer mobile detailing services for basic cleaning and detailing within a 25-mile radius of our location. However, more complex services like painting, modifications, and sound system installations must be performed at our facility where we have the necessary equipment and controlled environment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-yellow-500">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Ready to Get Started?</h2>
+            <p class="text-gray-800 max-w-3xl mx-auto mb-8">Contact us today to schedule an appointment or request a custom quote for your specific requirements.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="tel:+15551234567" class="bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center justify-center">
+                    <i class="fas fa-phone-alt mr-2"></i> Call Us Now
+                </a>
+                <a href="#contact-form" class="bg-transparent hover:bg-white hover:text-gray-900 text-gray-900 font-bold py-3 px-8 border-2 border-gray-900 rounded-full transition duration-300 inline-flex items-center justify-center">
+                    <i class="fas fa-envelope mr-2"></i> Send a Message
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-car-alt text-yellow-500 text-2xl"></i>
+                        <span class="text-2xl font-bold">AutoGlow</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Providing premium car detailing services to transform your vehicle inside and out.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#painting" class="text-gray-400 hover:text-yellow-500 transition duration-300">Professional Painting</a></li>
+                        <li><a href="services.html#stickering" class="text-gray-400 hover:text-yellow-500 transition duration-300">Custom Stickering</a></li>
+                        <li><a href="services.html#modification" class="text-gray-400 hover:text-yellow-500 transition duration-300">Performance Modifications</a></li>
+                        <li><a href="services.html#sound" class="text-gray-400 hover:text-yellow-500 transition duration-300">Premium Sound Systems</a></li>
+                        <li><a href="services.html#coating" class="text-gray-400 hover:text-yellow-500 transition duration-300">PFP Coating</a></li>
+                        <li><a href="services.html#interior" class="text-gray-400 hover:text-yellow-500 transition duration-300">Interior Detailing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-yellow-500 mt-1"></i>
+                            <span class="text-gray-400">123 Detailing Street, Automotive City, AC 12345</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-phone-alt text-yellow-500"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-yellow-500"></i>
+                            <span class="text-gray-400">info@autoglow.com</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-clock text-yellow-500"></i>
+                            <span class="text-gray-400">Mon-Sat: 8:00 AM - 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center">
+                <p class="text-gray-400">&copy; 2023 AutoGlow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-yellow-500 text-gray-900 w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+    <script>
+        // FAQ Accordion
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle answer visibility
+                    answer.classList.toggle('hidden');
+                    
+                    // Toggle icon rotation
+                    if (answer.classList.contains('hidden')) {
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+            
+            // Contact Form Submission
+            const contactForm = document.getElementById('contact-form');
+            const formMessage = document.getElementById('form-message');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // In a real implementation, you would send the form data to a server
+                    // For this demo, we'll just show a success message
+                    formMessage.classList.remove('hidden');
+                    formMessage.classList.add('bg-green-100', 'text-green-800', 'p-4', 'rounded-lg');
+                    formMessage.innerHTML = '<p class="font-medium">Thank you for your message! Our team will contact you shortly.</p>';
+                    
+                    // Reset form
+                    contactForm.reset();
+                    
+                    // Hide message after 5 seconds
+                    setTimeout(() => {
+                        formMessage.classList.add('hidden');
+                    }, 5000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

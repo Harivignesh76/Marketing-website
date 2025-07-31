@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - AutoGlow Car Detailing</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-car-alt text-yellow-500 text-2xl"></i>
+                    <a href="index.html" class="text-2xl font-bold">AutoGlow</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-yellow-500 transition duration-300 font-medium">Home</a>
+                    <a href="services.html" class="text-yellow-500 font-medium">Services</a>
+                    <a href="portfolio.html" class="hover:text-yellow-500 transition duration-300 font-medium">Portfolio</a>
+                    <a href="about.html" class="hover:text-yellow-500 transition duration-300 font-medium">About</a>
+                    <a href="contact.html" class="hover:text-yellow-500 transition duration-300 font-medium">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 pb-4">
+            <div class="container mx-auto px-4 flex flex-col space-y-3 pt-2">
+                <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">Home</a>
+                <a href="services.html" class="block py-2 px-4 text-sm bg-gray-700 rounded">Services</a>
+                <a href="portfolio.html" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">Portfolio</a>
+                <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">About</a>
+                <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-gray-700 rounded">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative bg-cover bg-center py-20" style="background-image: url('images/hero-bg.jpg.svg');">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Our Services</h1>
+            <p class="text-xl text-gray-200 max-w-3xl mx-auto">Discover our comprehensive range of professional car detailing and modification services designed to transform your vehicle.</p>
+        </div>
+    </section>
+
+    <!-- Services Introduction -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Premium Car Detailing Services</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">At AutoGlow, we offer a wide range of professional car detailing and modification services to enhance your vehicle's appearance, performance, and longevity. Each service is performed by our certified experts using premium products and state-of-the-art equipment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 1: Painting -->
+    <section id="painting" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="images/service-placeholder.svg" alt="Professional Car Painting" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4">Professional Painting</h2>
+                    <p class="text-gray-600 mb-6">Our professional painting service offers a complete transformation for your vehicle with premium quality paints and expert application techniques. Whether you're looking for a color change, fixing damaged paint, or adding custom designs, our skilled technicians deliver flawless results.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Premium Quality Paints</h4>
+                                <p class="text-gray-600">We use only high-quality automotive paints that provide excellent coverage, durability, and a stunning finish.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Custom Color Matching</h4>
+                                <p class="text-gray-600">Our computerized color matching system ensures perfect color consistency with your existing paint or desired shade.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Professional Application</h4>
+                                <p class="text-gray-600">Our climate-controlled painting booth and expert technicians ensure a flawless, dust-free finish every time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="contact.html" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Book This Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 2: Stickering -->
+    <section id="stickering" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pl-8">
+                    <img src="images/service-placeholder.svg" alt="Custom Car Stickering" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4">Custom Stickering & Vinyl Wraps</h2>
+                    <p class="text-gray-600 mb-6">Express your unique style with our custom stickering and vinyl wrap services. From subtle accents to complete vehicle wraps, we offer a wide range of high-quality vinyl materials and designs to transform your vehicle's appearance without permanent changes.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Premium Vinyl Materials</h4>
+                                <p class="text-gray-600">We use top-grade vinyl materials that are durable, UV-resistant, and designed to maintain their appearance for years.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Custom Design Options</h4>
+                                <p class="text-gray-600">From racing stripes and graphics to full custom designs, our design team can create the perfect look for your vehicle.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Professional Installation</h4>
+                                <p class="text-gray-600">Our experienced technicians ensure precise application with no bubbles, wrinkles, or imperfections.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="contact.html" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Book This Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 3: Modification -->
+    <section id="modification" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="images/service-placeholder.svg" alt="Car Performance Modifications" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4">Performance Modifications</h2>
+                    <p class="text-gray-600 mb-6">Take your vehicle's performance and aesthetics to the next level with our custom modification services. From engine upgrades to suspension enhancements and body kits, we offer comprehensive solutions tailored to your specific requirements and preferences.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Engine Performance Upgrades</h4>
+                                <p class="text-gray-600">Boost your vehicle's power and efficiency with our range of engine modifications, including ECU tuning, turbocharging, and exhaust system upgrades.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Suspension & Handling Improvements</h4>
+                                <p class="text-gray-600">Enhance your driving experience with custom suspension setups, performance brakes, and handling packages designed for your specific vehicle.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Exterior Modifications</h4>
+                                <p class="text-gray-600">Transform your vehicle's appearance with custom body kits, spoilers, wheels, and lighting upgrades that complement its performance enhancements.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="contact.html" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Book This Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 4: Sound System -->
+    <section id="sound" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pl-8">
+                    <img src="images/service-placeholder.svg" alt="Car Sound System Installation" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4">Premium Sound Systems</h2>
+                    <p class="text-gray-600 mb-6">Elevate your driving experience with our premium sound system installations. From basic speaker upgrades to complete custom audio setups, our audio specialists design and install systems that deliver exceptional sound quality while maintaining your vehicle's interior aesthetics.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">High-Quality Components</h4>
+                                <p class="text-gray-600">We offer a selection of premium audio brands and components, including speakers, amplifiers, subwoofers, and head units.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Custom Installation</h4>
+                                <p class="text-gray-600">Our technicians ensure clean, professional installations with proper wiring, sound dampening, and custom enclosures when needed.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Sound Tuning & Optimization</h4>
+                                <p class="text-gray-600">We fine-tune each system to achieve optimal sound quality based on your vehicle's acoustics and your listening preferences.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="contact.html" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Book This Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 5: PPF Coating -->
+    <section id="coating" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="images/service-placeholder.svg" alt="PPF Coating Application" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4">PPF Coating</h2>
+                    <p class="text-gray-600 mb-6">Protect your vehicle's paint and maintain its showroom shine with our professional Paint Protection Film (PPF) coating services. Our premium PPF solutions provide an invisible shield against stone chips, scratches, bug splatter, and environmental contaminants while enhancing your paint's depth and clarity.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Superior Protection</h4>
+                                <p class="text-gray-600">Our self-healing PPF provides exceptional protection against road debris, minor scratches, and environmental damage.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Customizable Coverage</h4>
+                                <p class="text-gray-600">Choose from partial coverage for high-impact areas or full-vehicle protection for comprehensive defense.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Long-Lasting Results</h4>
+                                <p class="text-gray-600">Our premium PPF products are designed to last for years without yellowing or degrading, maintaining your vehicle's appearance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="contact.html" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Book This Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 6: Interior Detailing -->
+    <section id="interior" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pl-8">
+                    <img src="images/service-placeholder.svg" alt="Car Interior Detailing" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4">Interior Detailing</h2>
+                    <p class="text-gray-600 mb-6">Revitalize your vehicle's interior with our comprehensive detailing services. From deep cleaning and stain removal to leather conditioning and odor elimination, we restore your car's interior to a fresh, like-new condition that enhances your driving experience.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Deep Cleaning & Sanitization</h4>
+                                <p class="text-gray-600">Our thorough cleaning process removes dirt, dust, and allergens from all interior surfaces, including hard-to-reach areas.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Upholstery & Leather Care</h4>
+                                <p class="text-gray-600">We use specialized products to clean, condition, and protect your vehicle's upholstery, leather, and trim surfaces.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-yellow-500 mr-3"><i class="fas fa-check-circle text-xl"></i></div>
+                            <div>
+                                <h4 class="font-bold">Odor Elimination</h4>
+                                <p class="text-gray-600">Our advanced odor elimination techniques remove unpleasant smells at their source rather than just masking them temporarily.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="contact.html" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Book This Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Packages -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Service Packages</h2>
+                <p class="text-gray-300 max-w-3xl mx-auto">Choose from our carefully designed service packages that combine our most popular services at special rates.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Package -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden transition duration-300 hover:shadow-xl hover:transform hover:scale-105">
+                    <div class="bg-yellow-500 text-gray-900 py-4 px-6">
+                        <h3 class="text-2xl font-bold">Basic Package</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>Exterior Wash & Wax</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>Interior Vacuum & Dusting</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>Tire & Wheel Cleaning</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>Dashboard & Console Detailing</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>Window Cleaning</span>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="contact.html" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Premium Package -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden transition duration-300 hover:shadow-xl hover:transform hover:scale-105">
+                    <div class="bg-yellow-500 text-gray-900 py-4 px-6">
+                        <h3 class="text-2xl font-bold">Premium Package</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>Everything in Basic Package</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>Clay Bar Treatment</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>Paint Correction (Minor)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>Leather Conditioning</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>Engine Bay Cleaning</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>Headlight Restoration</span>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="contact.html" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ultimate Package -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden transition duration-300 hover:shadow-xl hover:transform hover:scale-105">
+                    <div class="bg-yellow-500 text-gray-900 py-4 px-6">
+                        <h3 class="text-2xl font-bold">Ultimate Package</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>Everything in Premium Package</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>Full Paint Correction</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>Ceramic Coating Application</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>Interior Deep Cleaning</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>Odor Elimination Treatment</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>Fabric Protection Treatment</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-yellow-500 mr-3"></i>
+                                <span>12-Month Protection Warranty</span>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="contact.html" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-yellow-500">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Ready to Transform Your Vehicle?</h2>
+            <p class="text-gray-800 max-w-3xl mx-auto mb-8">Contact us today to schedule an appointment or request a custom quote for your specific requirements.</p>
+            <a href="contact.html" class="bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Contact Us Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-car-alt text-yellow-500 text-2xl"></i>
+                        <span class="text-2xl font-bold">AutoGlow</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Providing premium car detailing services to transform your vehicle inside and out.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-yellow-500 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#painting" class="text-gray-400 hover:text-yellow-500 transition duration-300">Professional Painting</a></li>
+                        <li><a href="#stickering" class="text-gray-400 hover:text-yellow-500 transition duration-300">Custom Stickering</a></li>
+                        <li><a href="#modification" class="text-gray-400 hover:text-yellow-500 transition duration-300">Performance Modifications</a></li>
+                        <li><a href="#sound" class="text-gray-400 hover:text-yellow-500 transition duration-300">Premium Sound Systems</a></li>
+                        <li><a href="#coating" class="text-gray-400 hover:text-yellow-500 transition duration-300">PFP Coating</a></li>
+                        <li><a href="#interior" class="text-gray-400 hover:text-yellow-500 transition duration-300">Interior Detailing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-yellow-500 mt-1"></i>
+                            <span class="text-gray-400">123 Detailing Street, Automotive City, AC 12345</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-phone-alt text-yellow-500"></i>
+                            <span class="text-gray-400">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-yellow-500"></i>
+                            <span class="text-gray-400">info@autoglow.com</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-clock text-yellow-500"></i>
+                            <span class="text-gray-400">Mon-Sat: 8:00 AM - 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center">
+                <p class="text-gray-400">&copy; 2023 AutoGlow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-yellow-500 text-gray-900 w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
